@@ -13,6 +13,8 @@
 		3B4C42A528B9E2880050BE31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4C42A328B9E2880050BE31 /* Main.storyboard */; };
 		3B4C42A728B9E2880050BE31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B4C42A628B9E2880050BE31 /* Assets.xcassets */; };
 		3B4C42AA28B9E2880050BE31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B4C42A828B9E2880050BE31 /* LaunchScreen.storyboard */; };
+		3B4C42B328B9E3F40050BE31 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3B4C42B228B9E3F40050BE31 /* FirebaseFirestore */; };
+		3B4C42B528B9E4860050BE31 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3B4C42B428B9E4860050BE31 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,7 @@
 		3B4C42A628B9E2880050BE31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B4C42A928B9E2880050BE31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B4C42AB28B9E2880050BE31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B4C42B428B9E4860050BE31 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B4C42B328B9E3F40050BE31 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +67,7 @@
 				3B4C42A628B9E2880050BE31 /* Assets.xcassets */,
 				3B4C42A828B9E2880050BE31 /* LaunchScreen.storyboard */,
 				3B4C42AB28B9E2880050BE31 /* Info.plist */,
+				3B4C42B428B9E4860050BE31 /* GoogleService-Info.plist */,
 			);
 			path = tap_furebaseversion;
 			sourceTree = "<group>";
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = tap_furebaseversion;
+			packageProductDependencies = (
+				3B4C42B228B9E3F40050BE31 /* FirebaseFirestore */,
+			);
 			productName = tap_furebaseversion;
 			productReference = 3B4C429A28B9E2880050BE31 /* tap_furebaseversion.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 3B4C429128B9E2880050BE31;
+			packageReferences = (
+				3B4C42B128B9E3F40050BE31 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 3B4C429B28B9E2880050BE31 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +138,7 @@
 			files = (
 				3B4C42AA28B9E2880050BE31 /* LaunchScreen.storyboard in Resources */,
 				3B4C42A728B9E2880050BE31 /* Assets.xcassets in Resources */,
+				3B4C42B528B9E4860050BE31 /* GoogleService-Info.plist in Resources */,
 				3B4C42A528B9E2880050BE31 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +368,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3B4C42B128B9E3F40050BE31 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3B4C42B228B9E3F40050BE31 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3B4C42B128B9E3F40050BE31 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3B4C429228B9E2880050BE31 /* Project object */;
 }
